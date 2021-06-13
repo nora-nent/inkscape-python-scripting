@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>setColor</name>
+    <id>nora.nent.setColor</id>
+    <effect>
+        <effects-menu>
+            <submenu name="nent"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">setColor.py</command>
+    </script>
+</inkscape-extension>
