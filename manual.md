@@ -67,6 +67,12 @@ inkscapeのエクステンションメニューに項目を追加するだけの
 <command location="inx" interpreter="python">minimum.py</command>
 ```
 
-## setColor
+### setColor
 
-選択しているテキストオブジェクトに色を指定するサンプルです。
+選択しているテキストオブジェクトに色を指定するサンプルです。フィルとストロークを指定したオブジェクトを選択して実行するとフィルを赤に、ストロークを青に変更します。
+
+![inkscape-py-1](image/inkscape-py-3.png)
+
+色を操作したい場合はinkex.ColorExtensionクラスを継承したクラスを作成し、modify_color()の戻り値に新しい色を指定します。
+
+modify_color()のnameをチェックしてフィルやストロークで条件分岐できます。またcolorには現在の色が格納されています。グラデーションを指定している場合はnameにstop-colorが渡されます。
